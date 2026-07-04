@@ -14,7 +14,7 @@
 	<title>Goldline Web Design | Home</title>
 	<link rel='stylesheet' href='style.css'>
 </head>
-<body>
+<body class='home-page'>
 	<header class='site-header'>
 		<div class='container'>
 			<nav>
@@ -45,12 +45,168 @@
 			</div>
 		</section>
 
-		<section class='section'>
+		<section class='section home-inquiry-section'>
+			<div class='container'>
+				<article class='card contact-form-card home-inquiry-card'>
+					<div class='section-header contact-form-header'>
+						<h2>Quick Project Inquiry</h2>
+						<p>Ready to elevate your website? Share a few details and get a tailored plan with next steps.</p>
+					</div>
+					<form class='inquiry-form' action='https://formsubmit.co/wearegoldline@gmail.com' method='POST'>
+						<input type='hidden' name='_subject' value='New Home Page Inquiry'>
+						<input type='hidden' name='_captcha' value='false'>
+						<input type='hidden' name='_template' value='table'>
+						<input type='text' name='_honey' tabindex='-1' autocomplete='off' class='field-honeypot'>
+
+						<div class='inquiry-grid'>
+							<label>
+								<span>Name</span>
+								<input type='text' name='name' required placeholder='Your full name'>
+							</label>
+							<label>
+								<span>Email</span>
+								<input type='email' name='email' required placeholder='you@business.com'>
+							</label>
+							<label>
+								<span>Business Type</span>
+								<input type='text' name='business_type' required placeholder='Bakery, med spa, agency, etc.'>
+							</label>
+							<label>
+								<span>Website Goal</span>
+								<select name='website_goal' required>
+									<option value=''>Select one</option>
+									<option>Brand New Website</option>
+									<option>Website Redesign</option>
+									<option>More Leads / Inquiries</option>
+									<option>Online Booking / Scheduling</option>
+								</select>
+							</label>
+							<label>
+								<span>Budget Range</span>
+								<select name='budget_range' required>
+									<option value=''>Select one</option>
+									<option>Under $1,500</option>
+									<option>$1,500 - $3,000</option>
+									<option>$3,000 - $6,000</option>
+									<option>$6,000+</option>
+								</select>
+							</label>
+							<label class='full'>
+								<span>Project Notes</span>
+								<textarea name='project_notes' rows='4' required placeholder='Tell me what you need and your ideal launch timing.'></textarea>
+							</label>
+						</div>
+
+						<div class='actions'>
+							<button type='submit' class='btn'>Send Quick Inquiry</button>
+							<a class='btn-outline' href='contact.html'>Open Full Form</a>
+						</div>
+					</form>
+				</article>
+			</div>
+		</section>
+
+		<section class='section home-case-launch'>
 			<div class='container'>
 				<div class='section-header'>
-					<h2>Featured Website Concepts</h2>
-					<p>Purposeful design built around clear messaging, visual polish, and conversion-focused layouts that guide users toward action.</p>
+					<h2>Open Any Full Case Study</h2>
+					<p>Jump directly into detailed strategy, design decisions, animations, and performance results.</p>
 				</div>
+				<article class='card case-launch-feature'>
+					<div class='case-launch-feature-copy'>
+						<p class='meta'>Featured Deep Dive</p>
+						<h3>Neighborhood Cafe Refresh</h3>
+						<p>A full conversion breakdown covering information architecture, mobile booking flow, trust placement, and six-week performance outcomes.</p>
+						<div class='tag-row'>
+							<span class='tag'>+38% Reservations</span>
+							<span class='tag'>-62% First-Click Time</span>
+							<span class='tag'>Hospitality UX</span>
+						</div>
+						<div class='actions'>
+							<a class='btn' href='coffee-case-study.html'>Open Featured Case Study</a>
+							<a class='btn-outline' href='work.html'>Browse All Case Studies</a>
+						</div>
+					</div>
+				</article>
+				<div class='case-launch-grid'>
+					<article class='card case-launch-card'>
+						<p class='meta'>Case Study 1</p>
+						<h3>Candle Bar Ecommerce Lift</h3>
+						<p class='case-launch-note'>Bundle conversion architecture and seasonal campaign system.</p>
+						<p class='case-launch-metric'>+24% AOV</p>
+						<a class='btn-outline' href='candle-case-study.html'>Open</a>
+					</article>
+					<article class='card case-launch-card'>
+						<p class='meta'>Case Study 2</p>
+						<h3>Embroidery Quote Funnel</h3>
+						<p class='case-launch-note'>Guided intake flow for higher-detail quote submissions.</p>
+						<p class='case-launch-metric'>+47% Qualified Inquiries</p>
+						<a class='btn-outline' href='embroidery-case-study.html'>Open</a>
+					</article>
+					<article class='card case-launch-card'>
+						<p class='meta'>Case Study 3</p>
+						<h3>Local Law Office Trust Rebuild</h3>
+						<p class='case-launch-note'>Authority-first structure for legal confidence and consultation flow.</p>
+						<p class='case-launch-metric'>+31% Consultations</p>
+						<a class='btn-outline' href='law-case-study.html'>Open</a>
+					</article>
+					<article class='card case-launch-card'>
+						<p class='meta'>Case Study 4</p>
+						<h3>Residential Cleaning Lead Upgrade</h3>
+						<p class='case-launch-note'>Service package clarity and quote-to-booking optimization.</p>
+						<p class='case-launch-metric'>+29% Recurring Clients</p>
+						<a class='btn-outline' href='cleaning-case-study.html'>Open</a>
+					</article>
+					<article class='card case-launch-card'>
+						<p class='meta'>Case Study 5</p>
+						<h3>Restaurant Reservation Boost</h3>
+						<p class='case-launch-note'>Reservation-first UX plus event-night campaign pathways.</p>
+						<p class='case-launch-metric'>+34% Online Reservations</p>
+						<a class='btn-outline' href='restaurant-case-study.html'>Open</a>
+					</article>
+					<article class='card case-launch-card'>
+						<p class='meta'>Case Study 6</p>
+						<h3>Dental Patient Funnel Redesign</h3>
+						<p class='case-launch-note'>Insurance clarity and trust-led intake conversion system.</p>
+						<p class='case-launch-metric'>+33% Completion Rate</p>
+						<a class='btn-outline' href='dental-case-study.html'>Open</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class='section home-atmosphere'>
+			<div class='container'>
+				<div class='section-header'>
+					<h2>Visual Atmosphere That Matches Your Brand</h2>
+					<p>Every build combines clean structure with rich imagery so your site feels premium the second someone lands on it.</p>
+				</div>
+				<div class='atmos-grid'>
+					<figure class='atmos-shot reveal-left' data-caption='Premium Brand Presence'>
+						<img src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1500&q=80' alt='Warm coffee shop counter with ambient lighting' loading='lazy' decoding='async'>
+					</figure>
+					<figure class='atmos-shot reveal-pop' data-caption='Editorial Visual Flow'>
+						<img src='https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=1400&q=80' alt='Stylish workspace and brand design materials' loading='lazy' decoding='async'>
+					</figure>
+					<figure class='atmos-shot reveal-right' data-caption='Confident Conversion Design'>
+						<img src='https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?auto=format&fit=crop&w=1400&q=80' alt='Modern cafe seating with premium interior tones' loading='lazy' decoding='async'>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<section class='featured-concepts-section'>
+			<div class='section-header featured-concepts-header'>
+					<h2>
+						<span class='fc-line fc-line-top'>Featured</span>
+						<span class='fc-line fc-line-bottom'>Website Concepts</span>
+					</h2>
+					<p>Purposeful design built around clear messaging, visual polish, and conversion-focused layouts that guide users toward action.</p>
+			</div>
+		</section>
+
+		<section class='section featured-concepts-carousel'>
+			<div class='container'>
 				<div class='featured-flow-stage' id='featuredFlowStage' aria-label='Featured website concept carousel'>
 					<div class='featured-flow-dots' aria-hidden='true'>
 						<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
@@ -61,6 +217,9 @@
 							<h3>Coffee Shop Website</h3>
 							<p>Designed to spotlight menu highlights, event nights, and online ordering in one smooth experience with clear calls to action for first-time visitors and returning regulars.</p>
 							<p class='featured-flow-note'>The layout prioritizes speed-to-decision with visible menu anchors, social proof near conversion points, and mobile-first pathways that support morning and lunch traffic behavior.</p>
+							<div class='actions'>
+								<a class='btn-outline' href='coffee-case-study.html'>View Full Coffee Case Study</a>
+							</div>
 							<div class='tag-row'>
 								<span class='tag'>Menu UX</span>
 								<span class='tag'>Event Pages</span>
@@ -125,6 +284,79 @@
 						<a class='btn' href='pricing.html'>Compare Packages</a>
 						<a class='btn-outline' href='contact.html'>Request a Quote</a>
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class='section home-momentum'>
+			<div class='container'>
+				<div class='section-header'>
+					<h2>How Momentum Builds After Launch</h2>
+					<p>Every project is structured so visitors move from first impression to action with less hesitation and stronger trust at each step.</p>
+				</div>
+				<div class='momentum-track'>
+					<article class='momentum-step reveal-left'>
+						<p class='meta'>Week 1</p>
+						<h3>Sharper First Impression</h3>
+						<p>New visitors instantly understand what you offer and why your business is the trusted choice in your market.</p>
+					</article>
+					<article class='momentum-step reveal-pop'>
+						<p class='meta'>Week 2-3</p>
+						<h3>Cleaner User Path</h3>
+						<p>Navigation, section order, and CTA placement guide users naturally toward quote requests, calls, and booking actions.</p>
+					</article>
+					<article class='momentum-step reveal-right'>
+						<p class='meta'>Week 4+</p>
+						<h3>Higher-Quality Inquiries</h3>
+						<p>With stronger messaging and better page flow, you receive more intentional leads instead of low-fit traffic.</p>
+					</article>
+				</div>
+				<div class='impact-grid'>
+					<article class='impact-stat card reveal-pop'>
+						<p class='meta'>Avg. Lift</p>
+						<strong>+31%</strong>
+						<p>Increase in qualified contact actions after redesign.</p>
+					</article>
+					<article class='impact-stat card reveal-left'>
+						<p class='meta'>Avg. Speed</p>
+						<strong>-43%</strong>
+						<p>Faster time for users to reach first CTA interaction.</p>
+					</article>
+					<article class='impact-stat card reveal-right'>
+						<p class='meta'>Avg. Trust</p>
+						<strong>2.2x</strong>
+						<p>More social-proof engagement on key conversion sections.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class='section-soft home-scroll-story'>
+			<div class='container'>
+				<div class='section-header'>
+					<h2>Scroll Story: From Visitor to Client</h2>
+					<p>A premium website should feel like a guided experience, not a wall of content. This is the sequence every build is designed around.</p>
+				</div>
+				<div class='story-stack'>
+					<article class='story-panel reveal-left'>
+						<p class='meta'>Scene 01</p>
+						<h3>Hook With Positioning</h3>
+						<p>Bold headline + clear offer establishes authority in seconds and gives users confidence they are in the right place.</p>
+					</article>
+					<article class='story-panel reveal-pop'>
+						<p class='meta'>Scene 02</p>
+						<h3>Prove It Fast</h3>
+						<p>Visual proof, service clarity, and testimonial layering remove skepticism before users hit decision moments.</p>
+					</article>
+					<article class='story-panel reveal-right'>
+						<p class='meta'>Scene 03</p>
+						<h3>Convert With Confidence</h3>
+						<p>High-contrast calls to action and low-friction contact paths turn attention into real, qualified inquiries.</p>
+					</article>
+				</div>
+				<div class='actions'>
+					<a class='btn' href='contact.html'>Build My Site Like This</a>
+					<a class='btn-outline' href='services.html'>Explore Build Options</a>
 				</div>
 			</div>
 		</section>
